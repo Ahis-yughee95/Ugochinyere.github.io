@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Summary</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Introduction</a></li>
+							<li class="active"><a href="generic.html">Project Report</a></li>
+							<li><a href="elements.html">Professional Background</a></li>
+							<li><a href="elements - Copy.html">List of Projects</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ahaiwe-ugochinyere/" class="icon brands fa-linkedin"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/olu_gbajie/profilecard/?igsh=MW9yM3htOGNremwwYw==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://x.com/ugochiny2?s=11" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section class="post">
+													
+							<header class="major">
+								<h1 style="font-size: 2rem; line-height: 1.2;">Data Pre-Processing and Visualization for<br />Customer Records Analysis</h1>
+							</header>
+							
+								<p><strong>Project Overview:</strong><br />
+									This project involved pre-processing a large dataset of customer records to prepare it for further analysis and generate insights for business decision-making. I utilized Python’s core libraries (without using pandas or seaborn for data handling) and structured the data to meet analytical needs, handled errors in the dataset, derived metrics, and saved outputs in JSON format. Visualizations and additional analysis were conducted using pandas and seaborn.
+								</p>
+							
+							<!--<div class="image fit main"><img src="images/program.jpg" alt="" /></div>-->
+							<p><strong>Key Project Phases:</strong></p>
+							<ol>
+								<li><strong>Data Ingestion and Structure Transformation:</strong>
+									<ul>
+										<li>Read customer records from a CSV file using Python’s CSV library.</li>
+										<li>Transformed flat data into nested structures to represent entities like Vehicle, Credit Card, and Address, enhancing the richness of the data.</li>
+									</ul>
+								</li>
+								<li><strong>Data Cleaning and Error Handling:</strong>
+									<p>Addressed errors in the dataset, such as empty values in the "dependents" field, replacing them with meaningful defaults and logging the rows where these corrections were made.</p>
+								</li>
+								<li><strong>Output Generation:</strong>
+									<ul>
+										<li>Generated structured JSON files for easy data retrieval:
+											<ul>
+												<li><strong>processed.json</strong>: containing all customer records.</li>
+												<li><strong>retired.json</strong> and <strong>employed.json</strong>: segmented by employment status.</li>
+												<li><strong>remove_ccard.json</strong>: flagged customers with credit cards exceeding a 10-year validity span, per client requirements.</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><strong>Additional Metrics Calculation:</strong>
+									<ul>
+										<li>Added a "Salary-Commute" metric representing the salary per mile of commute. Special handling was applied for customers traveling one mile or less to reflect salary alone.</li>
+										<li>Sorted records by this new metric in ascending order and saved as <strong>commute.json</strong> for ranking purposes.</li>
+									</ul>
+								</li>
+								<li><strong>Data Visualization:</strong>
+									<ul>
+										<l>With pandas and seaborn, I generated key visual insights:
+											<ul>
+												<li>Calculated the mean salary and median age of customers.</li>
+												<li>Plotted age distributions, dependents, and age conditioned by marital status.</li>
+												<li>Created multivariate plots for salary against commute distance, age against salary, and age against salary conditioned by dependents.</li>
+												<li>Enabled saving of visualizations to provide a reusable asset for client presentations.</li>
+									</ul>
+								</li>
+							</ol>
+							<p><strong>Code Structure and Presentation:</strong><br />
+								The code was modular, with logical structure, clear variable names, and error handling to ensure robustness. Markdown cells were included to delineate each task, making the notebook readable and maintainable for future enhancements.
+							</p>
+						</section>
+
+
+					</div>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<section class="split contact">
+										<div class="pagination">
+											<a href="index.html" class="previous">Previous</a>
+											<!-- Display all page numbers in one line -->
+											<a href="generic.html" class="page">1</a>
+											<a href="generic_Page2.html" class="page active">2</a>
+											<a href="generic_Page3.html" class="page active">3</a>
+											<a href="generic_Page4.html" class="page active">4</a>
+											<a href="generic_Page5.html" class="page active">5</a>
+											<a href="generic_Page6.html" class="page active">6</a>
+											<a href="generic_Page7.html" class="page active">7</a>
+											<a href="generic_Page8.html" class="page active">8</a>
+											<a href="" class="page">9</a>
+											<a href="" class="page">10</a>
+											<a href="generic_Page2.html" class="next">Next</a>
+										</div>
+									</section>
+
+									<style>
+										/* Style the pagination to appear inline and aligned */
+										.pagination {
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											gap: 8px;
+										}
+
+										/* Style for page links */
+										.pagination .page,
+										.pagination .previous,
+										.pagination .next {
+											text-decoration: none;
+											color: #333;
+											padding: 5px 10px;
+											border: 1px solid #ddd;
+											border-radius: 3px;
+											transition: background-color 0.3s;
+										}
+
+										/* Active page styling */
+										.pagination .page.active {
+											background-color: #007bff;
+											color: white;
+											border-color: #007bff;
+										}
+
+										/* Hover effect */
+										.pagination .page:hover,
+										.pagination .previous:hover,
+										.pagination .next:hover {
+											background-color: #f1f1f1;
+										}
+									</style>
+								</footer>
+
+
+
+				<!-- Copyright -->
+					<!--<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

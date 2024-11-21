@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Summary</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Introduction</a></li>
+							<li class="active"><a href="generic.html">Project Report</a></li>
+							<li><a href="elements.html">Professional Background</a></li>
+							<li><a href="elements - Copy.html">List of Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ahaiwe-ugochinyere/" class="icon brands fa-linkedin"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/olu_gbajie/profilecard/?igsh=MW9yM3htOGNremwwYw==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://x.com/ugochiny2?s=11" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1 style="font-size: 2rem; line-height: 1.2;">Emergency Vehicle Identification</h1>
+							</header>
+							
+							<section>
+								<p><strong>Project Overview:</strong><br />
+									This report focuses on classifying vehicles into emergency and non-emergency categories by analyzing vehicle characteristics and components. The aim is to enhance road access for emergency vehicles, ensuring better response times during critical situations.
+								</p>
+							</section>
+							
+							<section>
+								<h2>Data Overview and Pre-processing</h2>
+								<p>The dataset, obtained from an online source, includes images and labels indicating whether vehicles are emergency or non-emergency. The data underwent several pre-processing steps to ensure quality and consistency:</p>
+								<ul>
+									<li><strong>Data Source:</strong> The dataset was sourced from an online platform containing vehicle images and labels.</li>
+									<li><strong>Data Pre-processing:</strong> Columns were converted to ‘object’ data types, and image shapes were standardized. Image augmentation was applied using Keras Image Data Generator.</li>
+									<li><strong>Data Split:</strong> The data was split into 70% for training and 30% for validation.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Convolutional Neural Network (CNN)</h2>
+								<p>A CNN model was used for classifying the vehicles. Key features of the model include:</p>
+								<ul>
+									<li><strong>Convolution Layers:</strong> Filters with ReLU activation functions, MaxPooling for feature selection, and dropout to prevent overfitting.</li>
+									<li><strong>Hyperparameters:</strong> 32 and 64 filters with kernel sizes of 3x3, padding set to “same” to retain the feature map.</li>
+									<li><strong>Activation Function:</strong> Sigmoid function at the output layer for binary classification.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Model Compilation and Training</h2>
+								<p>The CNN model was compiled using the Adam optimizer and binary cross-entropy loss function. It was trained for 10 epochs using the training and validation datasets.</p>
+							</section>
+							
+							<section>
+								<h2>Model Evaluation</h2>
+								<p>The model’s performance was evaluated using accuracy metrics to measure how well the predicted labels matched the vehicle features:</p>
+								<ul>
+									<li><strong>Accuracy:</strong> The accuracy increased as more convolution layers were added, but some overfitting occurred as the layers deepened.</li>
+									<li><strong>Overfitting:</strong> The widening gap between training and validation losses suggests that the model may have overfit with additional layers.</li>
+								</ul>
+							</section>
+							
+							<section class="recommendations">
+								<h2>Key Findings</h2>
+								<ul>
+									<li><strong>Improved Classification:</strong> The model demonstrated improved classification accuracy with each convolution layer.</li>
+									<li><strong>Overfitting:</strong> A widening gap in loss/accuracy between training and validation data indicates potential overfitting as layers increased.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Conclusion</h2>
+								<p>This report demonstrated the application of a CNN model for classifying vehicles into emergency and non-emergency categories. While the model showed improvement in accuracy, the overfitting issue suggests that further optimization and testing may be required to enhance its performance and ensure better classification for real-time emergency scenarios.</p>
+							</section>
+							
+						</div>
+
+
+					</div>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<section class="split contact">
+										<div class="pagination">
+											<a href="generic_Page7.html" class="previous">Previous</a>
+											<!-- Display all page numbers in one line -->
+											<a href="generic.html" class="page active">1</a>
+											<a href="generic_Page2.html" class="page active">2</a>
+											<a href="generic_Page3.html" class="page active">3</a>
+											<a href="generic_Page4.html" class="page active">4</a>
+											<a href="generic_Page5.html" class="page active">5</a>
+											<a href="generic_Page6.html" class="page active">6</a>
+											<a href="generic_Page7.html" class="page active">7</a>
+											<a href="generic_Page8.html" class="page">8</a>
+											<a href="" class="page">9</a>
+											<a href="" class="page">10</a>
+											<a href="" class="next">Next</a>
+										</div>
+									</section>
+
+									<style>
+										/* Style the pagination to appear inline and aligned */
+										.pagination {
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											gap: 8px;
+										}
+
+										/* Style for page links */
+										.pagination .page,
+										.pagination .previous,
+										.pagination .next {
+											text-decoration: none;
+											color: #333;
+											padding: 5px 10px;
+											border: 1px solid #ddd;
+											border-radius: 3px;
+											transition: background-color 0.3s;
+										}
+
+										/* Active page styling */
+										.pagination .page.active {
+											background-color: #007bff;
+											color: white;
+											border-color: #007bff;
+										}
+
+										/* Hover effect */
+										.pagination .page:hover,
+										.pagination .previous:hover,
+										.pagination .next:hover {
+											background-color: #f1f1f1;
+										}
+									</style>
+								</footer>
+
+
+
+				<!-- Copyright -->
+					<!--<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>-->
+
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

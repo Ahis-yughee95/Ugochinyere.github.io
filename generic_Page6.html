@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Summary</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Introduction</a></li>
+							<li class="active"><a href="generic.html">Project Report</a></li>
+							<li><a href="elements.html">Professional Background</a></li>
+							<li><a href="elements - Copy.html">List of Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ahaiwe-ugochinyere/" class="icon brands fa-linkedin"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/olu_gbajie/profilecard/?igsh=MW9yM3htOGNremwwYw==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://x.com/ugochiny2?s=11" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1 style="font-size: 2rem; line-height: 1.2;">Predicting Carbon Monoxide Emissions from Motor Vehicles</h1>
+							</header>
+							
+							<section>
+								<p><strong>Project Overview:</strong><br />
+									This project employed regression and classification machine learning algorithms to predict carbon monoxide emissions from motor vehicles and classify them based on fuel consumption. The goal was to develop models capable of predicting emissions accurately, classifying vehicles, and grouping them based on features.
+								</p>
+							</section>
+							
+							<section>
+								<h2>Data Overview and Cleaning</h2>
+								<p>The dataset includes vehicle emissions and relevant features. The data underwent several cleaning steps to ensure quality and consistency:</p>
+								<ul>
+									<li><strong>Data Source:</strong> The dataset was sourced from the Canadian government portal: <a href="https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d6f16bf24dd64/resource/80894b62-7b45-4150-946d-ab756814c4be" target="_blank">Fuel Consumption Rating Dataset</a>.</li>
+									<li><strong>Data Cleaning:</strong> Missing values were handled, and numeric and categorical variables were separated for processing.</li>
+									<li><strong>Feature Encoding:</strong> Categorical variables were encoded, and numerical features were scaled using normalization techniques.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Exploratory Data Analysis (EDA)</h2>
+								<p>EDA was performed to understand trends and relationships in the dataset. Key findings included:</p>
+								<ul>
+									<li><strong>Vehicle Features:</strong> Key features influencing CO2 emissions included Engine Size and Fuel Consumption.</li>
+									<li><strong>Fuel Consumption and Emissions:</strong> A correlation was found between fuel consumption and CO2 emissions across different vehicle models.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Machine Learning Models</h2>
+								<p>The project applied both regression and classification models to predict emissions and classify vehicles:</p>
+								<ul>
+									<li><strong>Regression:</strong> Multiple linear and decision tree regression models were cross-validated using r² and mean squared error (MSE). The decision tree model with features such as Engine Size and Fuel Consumption (mpg) performed best, showing little improvement in CO2 emissions from 2010 to 2014.</li>
+									<li><strong>Classification:</strong> The decision tree classifier achieved the best performance, with Fuel Type correctly classifying 96% of the data.</li>
+									<li><strong>Overfitting Check:</strong> Overfitting was assessed by comparing training and validation set performances. Cross-validation was used to ensure model generalizability.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Clustering</h2>
+								<p>KMeans clustering was applied to the numeric data, with the following insights:</p>
+								<ul>
+									<li><strong>Cluster Analysis:</strong> "Fuel Type" and "Model" were identified as the best descriptors for the formed groups.</li>
+									<li><strong>Evaluation Metrics:</strong> The Davies-Bouldin and Normalized Mutual Information Score metrics were used to evaluate clustering performance.</li>
+								</ul>
+							</section>
+							
+							<section class="recommendations">
+								<h2>Key Findings</h2>
+								<ul>
+									<li><strong>Accurate Prediction:</strong> The machine learning models demonstrated high accuracy in predicting CO2 emissions.</li>
+									<li><strong>Classification Accuracy:</strong> Fuel Type classification achieved 96% accuracy using decision tree classifiers.</li>
+									<li><strong>Impact of Vehicle Features:</strong> Key features such as Engine Size and Fuel Consumption play a significant role in emissions prediction.</li>
+								</ul>
+							</section>
+							
+							<section>
+								<h2>Conclusion</h2>
+								<p>This project successfully demonstrated the application of machine learning techniques for predicting carbon monoxide emissions from vehicles and classifying them based on fuel consumption. The models achieved high accuracy, making them valuable tools for environmental monitoring. However, improvements in CO2 emissions from 2010 to 2014 were minimal, suggesting that more advanced techniques or additional data may be needed for further improvement in emissions prediction.</p>
+							</section>
+							
+						</div>
+
+
+					</div>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<section class="split contact">
+										<div class="pagination">
+											<a href="generic_Page5.html" class="previous active">Previous</a>
+											<!-- Display all page numbers in one line -->
+											<a href="generic.html" class="page active">1</a>
+											<a href="generic_Page2.html" class="page active">2</a>
+											<a href="generic_Page3.html" class="page active">3</a>
+											<a href="generic_Page4.html" class="page active">4</a>
+											<a href="generic_Page5.html" class="page active">5</a>
+											<a href="generic_Page6.html" class="page">6</a>
+											<a href="generic_Page7.html" class="page active">7</a>
+											<a href="generic_Page8.html" class="page active">8</a>
+											<a href="" class="page">9</a>
+											<a href="" class="page">10</a>
+											<a href="generic_Page7.html" class="next active">Next</a>
+										</div>
+									</section>
+
+									<style>
+										/* Style the pagination to appear inline and aligned */
+										.pagination {
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											gap: 8px;
+										}
+
+										/* Style for page links */
+										.pagination .page,
+										.pagination .previous,
+										.pagination .next {
+											text-decoration: none;
+											color: #333;
+											padding: 5px 10px;
+											border: 1px solid #ddd;
+											border-radius: 3px;
+											transition: background-color 0.3s;
+										}
+
+										/* Active page styling */
+										.pagination .page.active {
+											background-color: #007bff;
+											color: white;
+											border-color: #007bff;
+										}
+
+										/* Hover effect */
+										.pagination .page:hover,
+										.pagination .previous:hover,
+										.pagination .next:hover {
+											background-color: #f1f1f1;
+										}
+									</style>
+								</footer>
+
+
+
+				<!-- Copyright -->
+					<!--<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>-->
+
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
